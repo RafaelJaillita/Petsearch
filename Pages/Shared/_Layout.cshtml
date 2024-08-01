@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PetSearch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PetSearch.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/image_animate.css">
+    <link rel="stylesheet" href="~/css/banner.css">
+    <link rel="stylesheet" href="~/css/footer.css">
+    <link rel="stylesheet" href="~/css/navbar.css">
+    <link rel="stylesheet" href="~/css/banner_image.css">
+    <link rel="stylesheet" href="~/css/image.css">
+    <link rel="stylesheet" href="~/css/log_in.css">
+    <link rel="stylesheet" href="~/css/form_pet.css">
+    <link rel="stylesheet" href="~/css/carousel.css">
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <img src="~/images/pet.png" id="pet"/>
+            <b>Pet Search</b>
+        </div>
+        <nav class="container-fluid navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="navbar-item btn btn-dark">
+                        <a class="nav-link" href="~/Index">
+                        <h5 id="text">Principal Page</h5>
+                        </a>
+                    </li>
+                    <li class="navbar-item btn btn-dark">
+                        <a class="nav-link" href="~/SearchPets">
+                        <h5 id="text">Searching Pets</h5>
+                        </a>
+                    </li>
+                    <li class="navbar-item btn btn-dark">
+                        <a class="nav-link" href="~/FoundPets">
+                        <h5 id="text1">Finding Pets</h5>
+                        </a>
+                    </li>
+                    <li class="navbar-item btn btn-dark">
+                        <a class="nav-link" href="~/Sheltters
+">
+                        <h5 id="text2">Shelter</h5>
+                        </a>
+                    </li>
+                    <li class="navbar-item btn btn-dark" >
+                        <a class="nav-link" href="/Users/Login">
+                        <h5 id="text2">Log In</h5>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3 mb-5">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-muted" style="background: url(/images/bg_footer.png);">
+        <div class="container mt-5">
+            <div style="text-align: center;" id="h1">
+                <h1 id="text">Comunication Data</h1>
+                <h3 id="text1">Landline: 52-72747</h3>
+            </div>
+            <ul>
+                <li id="li" class="mt-3">
+                    <a id="a" href="#">
+                        <img src="~/images/instagram.png" id="social_network">&nbsp; Instagram<img/>
+                    </a>
+                </li>
+                <li id="li" class="mt-3">
+                    <a id="a" href="#">
+                        <img src="~/images/whatsapp.png" id="social_network">&nbsp; Whatsapp<img/>
+                    </a>
+                </li>
+                <li id="li" class="mt-3">
+                    <a id="a" href="#">
+                        <img src="~/images/twitter.png" id="social_network_twiter">&nbsp; Twitter<img/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="absolute">
+            <img src="~/images/cat.png" id="cat"/>
+        </div>
+
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

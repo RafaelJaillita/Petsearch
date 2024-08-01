@@ -1,0 +1,49 @@
+﻿@page
+@model PetSearch.Pages.FoundPetsAdm.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>FoundPet</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FoundPet.LastSeenAddress" class="control-label"></label>
+                <input asp-for="FoundPet.LastSeenAddress" class="form-control" />
+                <span asp-validation-for="FoundPet.LastSeenAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FoundPet.Cellphone" class="control-label"></label>
+                <input asp-for="FoundPet.Cellphone" class="form-control" />
+                <span asp-validation-for="FoundPet.Cellphone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FoundPet.ImagePet" class="control-label"></label>
+                <input asp-for="FoundPet.ImagePet" class="form-control" />
+                <span asp-validation-for="FoundPet.ImagePet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FoundPet.UserId" class="control-label"></label>
+                <input asp-for="FoundPet.UserId" class="form-control" />
+                <span asp-validation-for="FoundPet.UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

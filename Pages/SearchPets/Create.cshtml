@@ -1,0 +1,90 @@
+﻿@page
+@model PetSearch.Pages.SearchPets.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+			<h1 class="h1">Pet Search</h1>
+	</div>
+	<div class="row">
+			<h4 class="h4" style="text-align:center">Your mascot is so important for us too!</h4>
+	</div>
+	
+	<div class="row input-container">
+		<div class="row">
+			<h2 class="h2" style="text-align:left" >Write your pet information</h2>
+		</div>
+</div>
+<hr />
+<div class="row text-light" id="form_pet">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SearchPet.AnimalName" class="control-label"></label>
+                <input asp-for="SearchPet.AnimalName" class="form-control" />
+                <span asp-validation-for="SearchPet.AnimalName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.Breed" class="control-label"></label>
+                <input asp-for="SearchPet.Breed" class="form-control" />
+                <span asp-validation-for="SearchPet.Breed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.LastSeenAddress" class="control-label"></label>
+                <input asp-for="SearchPet.LastSeenAddress" class="form-control" />
+                <span asp-validation-for="SearchPet.LastSeenAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.Color" class="control-label"></label>
+                <input asp-for="SearchPet.Color" class="form-control" />
+                <span asp-validation-for="SearchPet.Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.ImagePet" class="control-label"></label>
+                <input type="file" accept=".jpg, .png" asp-for="SearchPet.ImagePet" class="form-control" />
+                <span asp-validation-for="SearchPet.ImagePet" class="text-danger"></span>
+            </div>
+
+<div class="row input-container">
+		<div class="row">
+			<h2 class="h2" style="text-align:left" >Write your message</h2>
+		</div>
+</div>
+            <div class="form-group">
+                <label asp-for="SearchPet.Message" class="control-label"></label>
+                <input asp-for="SearchPet.Message" class="form-control" />
+                <span asp-validation-for="SearchPet.Message" class="text-danger"></span>
+            </div>
+            
+<div class="row input-container">
+		<div class="row">
+			<h2 class="h2" style="text-align:left" >Write your information</h2>
+		</div>
+</div>
+            <div class="form-group">
+                <label asp-for="SearchPet.Cellphone" class="control-label"></label>
+                <input asp-for="SearchPet.Cellphone" class="form-control" />
+                <span asp-validation-for="SearchPet.Cellphone" class="text-danger"></span>
+            </div>
+            <div class="form-group collapse">
+                <label asp-for="SearchPet.UserId" class="control-label"></label>
+                <input asp-for="SearchPet.UserId" class="form-control" value="@HttpContext.Session.GetInt32("user_id")"/>
+                <span asp-validation-for="SearchPet.UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-5">
+                <input id="btn" type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

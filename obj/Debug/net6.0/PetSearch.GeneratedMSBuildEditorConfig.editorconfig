@@ -1,0 +1,193 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PetSearch
+build_property.RootNamespace = PetSearch
+build_property.ProjectDir = C:\PROGRA WEB III PROY\PetSearch\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\PROGRA WEB III PROY\PetSearch
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/AnimalShelters.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5pbWFsU2hlbHRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FileUpload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsZVVwbG9hZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FindingPets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmluZGluZ1BldHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FormPetFind.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybVBldEZpbmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FormPetSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybVBldFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FoundPetsAdm/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91bmRQZXRzQWRtXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FoundPetsAdm/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91bmRQZXRzQWRtXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FoundPetsAdm/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91bmRQZXRzQWRtXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FoundPetsAdm/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91bmRQZXRzQWRtXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FoundPetsAdm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91bmRQZXRzQWRtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FoundPets/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91bmRQZXRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FoundPets/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91bmRQZXRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FoundPets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91bmRQZXRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FoundPets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91bmRQZXRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/FoundPets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91bmRQZXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchingPets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoaW5nUGV0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchPetsAdm/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGV0c0FkbVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchPetsAdm/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGV0c0FkbVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchPetsAdm/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGV0c0FkbVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchPetsAdm/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGV0c0FkbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchPetsAdm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGV0c0FkbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchPets/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGV0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchPets/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGV0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchPets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGV0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchPets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGV0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/SearchPets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGV0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Sheltters/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hlbHR0ZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Sheltters/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hlbHR0ZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Sheltters/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hlbHR0ZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Sheltters/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hlbHR0ZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Sheltters/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hlbHR0ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Users/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PROGRA WEB III PROY/PetSearch/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3dsrbenw6c

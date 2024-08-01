@@ -1,0 +1,87 @@
+﻿body {
+}
+.contain {
+    margin: 100px;
+    display: inline-flex;
+}
+
+.card {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1
+}
+
+    .card::before {
+        content: "";
+        width: 80%;
+        height: 50%;
+        display: block;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(1px0);
+        -webkit-backdrop-filter: blur(5px);
+        position: absolute;
+        z-index: -1;
+        border-radius: 10px;
+    }
+
+    .card::after {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        border: 1px solid rgb(255 255 255 / 50%);
+        border-radius: 10px;
+        z-index: -1;
+    }
+
+    .card:not(:first-child) {
+        margin-left: -50px;
+    }
+
+    .card:hover {
+        transform: translateY(-20px);
+        transition: 0.4s ease-out;
+    }
+
+        .card:hover ~ .card {
+            position: relative;
+            left: 50px;
+            transition: 0.4s ease-out;
+        }
+
+.nature .card:nth-of-type(1) {
+    background: url('https://www.abc.es/xlsemanal/wp-content/uploads/sites/5/2022/04/perros-expresiones-faciales-fingir-caras-humanos2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nature .card:nth-of-type(2) {
+    background: url('https://cloudfront-us-east-1.images.arcpublishing.com/infobae/3WZJKDUPKJCKLNRBMXKSDGLFPM.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nature .card:nth-of-type(3) {
+    background: url('https://www.nationalgeographic.com.es/medio/2022/01/02/los-perros-son-capaces-de-anticipar-cuando-estamos-a-punto-de-volver-a-casa_9ae013ac_800x800.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nature .card:nth-of-type(4) {
+    background: url('https://www.fundacion-affinity.org/sites/default/files/los-10-sonidos-principales-del-perro.jpg');
+    background-size: cover;
+    background-position: center;
+}
+

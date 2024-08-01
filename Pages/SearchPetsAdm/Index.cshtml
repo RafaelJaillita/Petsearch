@@ -1,0 +1,76 @@
+﻿@page
+@model PetSearch.Pages.SearchPetsAdm.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>REQUESTS</h1>
+
+<table class="table text-light" id="form_pet">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.SearchPet[0].AnimalName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SearchPet[0].Breed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SearchPet[0].LastSeenAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SearchPet[0].Color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SearchPet[0].Cellphone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SearchPet[0].Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SearchPet[0].ImagePet)
+            </th>
+
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SearchPet) {
+            @if (@Html.DisplayFor(modelItem => item.Status) == 1)
+            {
+                <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.AnimalName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Breed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastSeenAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cellphone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImagePet)
+            </td>
+            
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Accept Request</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Reject Request</a>
+            </td>
+        </tr>
+        }
+}
+    </tbody>
+</table>

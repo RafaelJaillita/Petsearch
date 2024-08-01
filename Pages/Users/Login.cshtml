@@ -1,0 +1,34 @@
+﻿@page
+@model PetSearch.Pages.Users.LogInModel
+
+@{
+    
+    ViewData["Title"] = "Login";
+}
+
+<div id="bottom">
+    <form method="post" class="form">
+    <h1>Login</h1>
+     <div class="cont">
+         <div class="input-cont">
+         <i class="fas fa-envelope icon"></i>
+         <input input type="text" asp-for="userString" placeholder="Email Address">
+         
+         </div>
+         
+         <div class="input-cont">
+         <i class="fas fa-key icon"></i>
+         <input type="text" asp-for="passwordString" placeholder="Password">
+         
+         </div>
+         <input type="submit" value="Login" class="button">
+         <p class="p">By signing up, you agree to our Terms of Use and Privacy Policy.</p>
+         <p class="p">You do not have an account? <a class="link" href="~/Users/Create">Register</a></p>
+     </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

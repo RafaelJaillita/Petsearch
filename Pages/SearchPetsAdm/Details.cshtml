@@ -1,0 +1,85 @@
+﻿@page
+@model PetSearch.Pages.SearchPetsAdm.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>SearchPet</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.AnimalName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.AnimalName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.Breed)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.Breed)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.LastSeenAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.LastSeenAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.Color)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.Color)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.Cellphone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.Cellphone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.Message)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.Message)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.ImagePet)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.ImagePet)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.RegisteraDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.RegisteraDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.Status)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.LastUpdate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.LastUpdate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SearchPet.UserId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SearchPet.UserId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.SearchPet?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,70 @@
+﻿@page
+@model PetSearch.Pages.FormPetModel
+@{
+     ViewData["Title"] = "Form Search";
+}
+
+<form>
+    <div class="container" >
+	<div>
+		<h1 class="h1sty">Pet Search</h1>
+	</div>
+	<div>
+		<h4  class="h4sty" style="text-align:center">Your mascot is so important for us too!</h4>
+	</div>
+	
+	<div class="row input-container">
+		<div>
+			<h2 class="h2sty" style="text-align:left" >Write your pet information</h2>
+		</div>
+			
+				<div class="styled-input wide" >
+					<input id="input" type="text"  placeholder="Animal Name" />
+				</div>
+			
+				<div class="styled-input wide">
+					<input id="input" type="text" placeholder="Breed" />
+				</div>
+			
+				<div class="styled-input wide" >
+					<input id="input" type="text"  placeholder="Last seen address" />
+		        </div>
+			
+				<div class="styled-input wide">
+					<input id="input" type="text"  placeholder="Color" />
+				</div>
+			
+			
+			<div>
+				<h2 class="h2sty" style="text-align:left">Write your information</h2>
+			</div>
+			
+				<div class="styled-input wide" >
+					<input id="input" type="number" placeholder="Cellphone" />
+				</div>
+			
+			<div>
+				<h2 class="h2sty" style="text-align:left">Write some extra information about your dog that might help to find it</h2>
+			</div>
+			
+				<div class="styled-input wide">
+					<textarea style="width:600px" type="text" placeholder="Message" ></textarea>
+				</div>
+			
+			<div>
+				<h2  class="h2sty" style="text-align:left">Please insert an image of your mascot to make te search eassier</h2>
+			</div>
+		
+				<div class="styled-input wide">
+					<input style="width:600px"   type="file" accept=".jpg , .png" />
+
+				</div>
+		
+			<div >
+				<div id="btn" class="btn-lrg submit-btn">Send Data</div>
+			</div>
+	</div>
+</div>
+
+</form>
+

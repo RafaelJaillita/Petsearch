@@ -1,0 +1,85 @@
+﻿@page
+@model PetSearch.Pages.SearchPetsAdm.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>SearchPet</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SearchPet.Id" />
+            <div class="form-group">
+                <label asp-for="SearchPet.AnimalName" class="control-label"></label>
+                <input asp-for="SearchPet.AnimalName" class="form-control" />
+                <span asp-validation-for="SearchPet.AnimalName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.Breed" class="control-label"></label>
+                <input asp-for="SearchPet.Breed" class="form-control" />
+                <span asp-validation-for="SearchPet.Breed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.LastSeenAddress" class="control-label"></label>
+                <input asp-for="SearchPet.LastSeenAddress" class="form-control" />
+                <span asp-validation-for="SearchPet.LastSeenAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.Color" class="control-label"></label>
+                <input asp-for="SearchPet.Color" class="form-control" />
+                <span asp-validation-for="SearchPet.Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.Cellphone" class="control-label"></label>
+                <input asp-for="SearchPet.Cellphone" class="form-control" />
+                <span asp-validation-for="SearchPet.Cellphone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.Message" class="control-label"></label>
+                <input asp-for="SearchPet.Message" class="form-control" />
+                <span asp-validation-for="SearchPet.Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.ImagePet" class="control-label"></label>
+                <input asp-for="SearchPet.ImagePet" class="form-control" />
+                <span asp-validation-for="SearchPet.ImagePet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.RegisteraDate" class="control-label"></label>
+                <input asp-for="SearchPet.RegisteraDate" class="form-control" />
+                <span asp-validation-for="SearchPet.RegisteraDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.Status" class="control-label"></label>
+                <input asp-for="SearchPet.Status" class="form-control" />
+                <span asp-validation-for="SearchPet.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.LastUpdate" class="control-label"></label>
+                <input asp-for="SearchPet.LastUpdate" class="form-control" />
+                <span asp-validation-for="SearchPet.LastUpdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SearchPet.UserId" class="control-label"></label>
+                <input asp-for="SearchPet.UserId" class="form-control" />
+                <span asp-validation-for="SearchPet.UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

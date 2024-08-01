@@ -1,0 +1,34 @@
+﻿@page
+@model PetSearch.Pages.Index1Model
+@{
+    ViewData["Title"] = "Register";
+}
+<div id="bottom">
+<form class="form">
+    
+    <h1>Register</h1>
+     <div class="cont">
+     
+     <div class="input-cont">
+         <i class="fas fa-user icon"></i>
+         <input type="text" placeholder="Full Name">
+         
+         </div>
+         
+         <div class="input-cont">
+         <i class="fas fa-envelope icon"></i>
+         <input type="text" placeholder="Email Address">
+         
+         </div>
+         
+         <div class="input-cont">
+        <i class="fas fa-key icon"></i>
+         <input type="password" placeholder="Password">
+         
+         </div>
+         <input type="submit" value="Register" class="button">
+         <p class="p">By signing up, you agree to our Terms of Use and Privacy Policy.</p>
+         <p class="p">You do not have an account?<a class="link" href="~/LogIn">Log In</a></p>
+     </div>
+    </form>
+</div>

@@ -1,0 +1,73 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="w">
+    <div class="i"></div>
+    <div class="h">
+    </div>
+</div>
+<div class="wrapper">
+    <div class="contain nature">
+        <div class="card">
+                <h3>Searching Pets</h3>
+                <a href="~/SearchingPets">
+                    <p>Go to the Site</p>
+                </a>
+        </div>
+        <div class="card">
+                <h3>Finding Pets</h3>
+                <a href="~/FindingPets">
+                    <p>Go to the Site</p>
+                </a>
+        </div>
+        <div class="card">
+                <h3>Shelter</h3>
+                <a href="AnimalShelters">
+                    <p>Go to the Site</p>
+                </a>
+        </div>
+        <div class="card">
+                <h3>Log In</h3>
+                <a href="~/LogIn">
+                    <p>Go to the Site</p>
+                </a>
+        </div>
+    </div>
+
+</div>
+<div id="table">
+    <table>
+        <thead></thead>
+        <tbody>
+            <tr>
+                <th>
+                    <img class="img-fluid" id="img_table" src="~/images/cat_dogBanner.jpg" />
+                </th>
+                <th id="h1">
+                    The simple fact that my dog <br>
+                    loves me more than <br>
+                    I love him <br>
+                    It is such an undeniable reality that, <br>
+                    every time i think of her, <br>
+                    I am ashamed.
+                </th>
+            </tr>
+            <tr>
+                <th id="h1"> 
+                    Dogs love their friends <br>
+                    and bite their enemies. <br>
+                    Almost unlike people <br>
+                    who tend to mix love and hate. <br>
+                </th>
+                <th>
+                    <img class="img-fluid" id="img_table" src="~/images/dogBanner.jpg" />
+                </th>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</div>
+
+

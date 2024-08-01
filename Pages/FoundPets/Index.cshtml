@@ -1,0 +1,66 @@
+﻿@page
+@model PetSearch.Pages.FoundPets.IndexModel
+
+@{
+
+    ViewData["Title"] = "Index";
+}
+
+<h1>PETS FOUND</h1>
+<h1>@HttpContext.Session.GetInt32("user_status")</h1>
+<div class="col-xs-12">
+    @if(@HttpContext.Session.GetInt32("user_status") == 2)
+    {
+        <a href="~/FoundPets/Create">
+            <div id="btn" class="btn-lrg submit-btn">Insert Data</div>
+        </a>
+    }
+    else
+    {
+        <a href="~/Users/Login">
+            <div id="btn" class="btn-lrg submit-btn">Insert Data</div>
+        </a>
+    }
+</div>
+
+<div class="col-xs-12 mt-4">
+    @if(@HttpContext.Session.GetString("user_role") == "admin")
+    {
+        <a href="~/FoundPetsAdm">
+            <div id="btn" class="btn-lrg submit-btn">Request</div>
+        </a>
+    }
+</div>
+
+<section class="about section-padding">
+                <div class="container text-light" id="search_pet">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h2 class="mb-5">Finding Pets</h2>
+                        </div>
+                        @foreach (var item in Model.FoundPet) {
+                if (item.Status == 2)
+                {
+                    <div class="col-lg-4 col-12">
+                        <div>
+                            <img src="~/images/find_pet/@Html.DisplayFor(modelItem => item.ImagePet)" alt="" width="400" height="300">
+
+                            <div class="team-info">
+                                <p>Important Data</p>
+                                <ul >
+                                    <li>
+                                        Phone: @Html.DisplayFor(modelItem => item.Cellphone)
+                                    </li>
+                                    <li>
+                                        Last seen address: @Html.DisplayFor(modelItem => item.LastSeenAddress)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+                    </div>
+                </div>
+</section>

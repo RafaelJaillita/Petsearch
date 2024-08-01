@@ -1,0 +1,44 @@
+﻿@page
+@model PetSearch.Pages.Sheltters.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Sheltter</h4>
+<hr />
+<div class="row text-light" id="form_pet">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Sheltter.NameSheltter" class="control-label"></label>
+                <input asp-for="Sheltter.NameSheltter" class="form-control" />
+                <span asp-validation-for="Sheltter.NameSheltter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheltter.Address" class="control-label"></label>
+                <input asp-for="Sheltter.Address" class="form-control" />
+                <span asp-validation-for="Sheltter.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sheltter.Cellphone" class="control-label"></label>
+                <input asp-for="Sheltter.Cellphone" class="form-control" />
+                <span asp-validation-for="Sheltter.Cellphone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

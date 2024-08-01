@@ -1,0 +1,65 @@
+﻿@page
+@model PetSearch.Pages.FoundPetsAdm.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>FoundPet</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FoundPet.Id" />
+            <div class="form-group">
+                <label asp-for="FoundPet.LastSeenAddress" class="control-label"></label>
+                <input asp-for="FoundPet.LastSeenAddress" class="form-control" />
+                <span asp-validation-for="FoundPet.LastSeenAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FoundPet.Cellphone" class="control-label"></label>
+                <input asp-for="FoundPet.Cellphone" class="form-control" />
+                <span asp-validation-for="FoundPet.Cellphone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FoundPet.ImagePet" class="control-label"></label>
+                <input asp-for="FoundPet.ImagePet" class="form-control" />
+                <span asp-validation-for="FoundPet.ImagePet" class="text-danger"></span>
+            </div>
+            <div class="form-group collapse">
+                <label asp-for="FoundPet.RegisterDate" class="control-label"></label>
+                <input asp-for="FoundPet.RegisterDate" class="form-control" />
+                <span asp-validation-for="FoundPet.RegisterDate" class="text-danger"></span>
+            </div>
+            <div class="form-group collapse" >
+                <label asp-for="FoundPet.Status" class="control-label"></label>
+                <input asp-for="FoundPet.Status" class="form-control" value="2"  />
+                <span asp-validation-for="FoundPet.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group collapse">
+                <label asp-for="FoundPet.LastUpdate" class="control-label"></label>
+                <input asp-for="FoundPet.LastUpdate" class="form-control" />
+                <span asp-validation-for="FoundPet.LastUpdate" class="text-danger"></span>
+            </div>
+            <div class="form-group collapse">
+                <label asp-for="FoundPet.UserId" class="control-label"></label>
+                <input asp-for="FoundPet.UserId" class="form-control" />
+                <span asp-validation-for="FoundPet.UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
